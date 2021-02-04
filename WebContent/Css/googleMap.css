@@ -1,0 +1,92 @@
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+
+body{	
+	background-image: url("../images/covid.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: sans-serif;
+	transition: padding-top 0.5s ease;
+	height: 100px;
+}
+
+.bg-light {
+    background-color:var(--color-light)!important;
+    background-color: white;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+    color: white;
+}
+
+.contact-box {
+    padding: 3rem;
+}
+
+.contact-box label{
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.contact-box h1{
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+
+
+.form-control {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+}
+
+.register-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+ 
+ @media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
